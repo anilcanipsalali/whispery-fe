@@ -14,7 +14,7 @@ let socket = null;
 export const connectWithSocketServer = (userDetails) => {
   const jwtToken = userDetails.token;
 
-  socket = io("http://localhost:8080", {
+  socket = io("https://whispery-be.herokuapp.com/", {
     auth: {
       token: jwtToken,
     },

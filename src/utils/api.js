@@ -2,7 +2,7 @@ import axios from 'axios';
 import { logout } from './auth';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:8080/api',
+    baseURL: 'https://whispery-be.herokuapp.com/api',
     timeout: 2000
 });
 
